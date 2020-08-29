@@ -9017,7 +9017,7 @@ msgid ""
 msgstr ""
 "Polecenia chage może użyć tylko użytkownik root, za wyjątkiem opcji <option>-"
 "l</option>. Może się nią posłużyć się użytkownik nieuprzywilejowany  do "
-"stwierdzenia, kiedy wygasa jego własne hasło lub konto."
+"stwierdzenia, kiedy wygasa jego lub jej własne hasło lub konto."
 
 #: chage.1.xml:301(replaceable)
 msgid "15"
