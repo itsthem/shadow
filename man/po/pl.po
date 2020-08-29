@@ -2826,7 +2826,7 @@ msgstr "OWNPASS"
 
 #: suauth.5.xml:148(para)
 msgid ""
-"For the su command to be successful, the user must enter his or her own "
+"For the su command to be successful, the user must enter their own "
 "password. They are told this."
 msgstr ""
 
@@ -7226,7 +7226,7 @@ msgstr ""
 msgid ""
 "Systems which do not support concurrent group sets will have the information "
 "from <filename>/etc/group</filename> reported. The user must use "
-"<command>newgrp</command> or <command>sg</command> to change his current "
+"<command>newgrp</command> or <command>sg</command> to change their current "
 "real and effective group ID."
 msgstr ""
 
