@@ -181,24 +181,24 @@
 
   Additionally, the Shadow Suite adds lots of other nice features:
 
-  ·  A configuration file to set login defaults (/etc/login.defs)
+  Â·  A configuration file to set login defaults (/etc/login.defs)
 
-  ·  Utilities for adding, modifying, and deleting user accounts and
+  Â·  Utilities for adding, modifying, and deleting user accounts and
      groups
 
-  ·  Password aging and expiration
+  Â·  Password aging and expiration
 
-  ·  Account expiration and locking
+  Â·  Account expiration and locking
 
-  ·  Shadowed group passwords (optional)
+  Â·  Shadowed group passwords (optional)
 
-  ·  Double length passwords (16 character passwords) NOT RECOMMENDED
+  Â·  Double length passwords (16 character passwords) NOT RECOMMENDED
 
-  ·  Better control over user's password selection
+  Â·  Better control over user's password selection
 
-  ·  Dial-up passwords
+  Â·  Dial-up passwords
 
-  ·  Secondary authentication programs NOT RECOMMENDED
+  Â·  Secondary authentication programs NOT RECOMMENDED
 
   Installing the Shadow Suite contributes toward a more secure system,
   but there are many other things that can also be done to improve the
@@ -215,18 +215,18 @@
   There are a few circumstances and configurations in which installing
   the Shadow Suite would NOT be a good idea:
 
-  ·  The machine does not contain user accounts.
+  Â·  The machine does not contain user accounts.
 
-  ·  Your machine is running on a LAN and is using NIS (Network
+  Â·  Your machine is running on a LAN and is using NIS (Network
      Information Services) to get or supply user names and passwords to
      other machines on the network.  (This can actually be done, but is
      beyond the scope of this document, and really won't increase
      security much anyway)
 
-  ·  Your machine is being used by terminal servers to verify users via
+  Â·  Your machine is being used by terminal servers to verify users via
      NFS (Network File System), NIS, or some other method.
 
-  ·  Your machine runs other software that validates users, and there is
+  Â·  Your machine runs other software that validates users, and there is
      no shadow version available, and you don't have the source code.
 
   2.2.  Format of the /etc/passwd file
@@ -268,7 +268,7 @@
 
   Where Np is the salt and ge08pfz4wuk is the encoded password.  The
   encoded salt/password could just as easily have been kbeMVnZM0oL7I and
-  the two are exactly the same password.  There are 4096 possible encod­
+  the two are exactly the same password.  There are 4096 possible encodÂ­
   ings for the same password.  (The example password in this case is
   'password', a really bad password).
 
@@ -390,12 +390,12 @@
 
   There are several versions that have been used on Linux systems:
 
-  ·  shadow-3.3.1 is the original.
+  Â·  shadow-3.3.1 is the original.
 
-  ·  shadow-3.3.1-2 is Linux specific patch made by Florian La Roche
+  Â·  shadow-3.3.1-2 is Linux specific patch made by Florian La Roche
      <flla@stud.uni-sb.de> and contains some further enhancements.
 
-  ·  shadow-mk was specifically packaged for Linux.
+  Â·  shadow-mk was specifically packaged for Linux.
 
   The shadow-mk package contains the shadow-3.3.1 package distributed by
   Julianne F. Haugh with the shadow-3.3.1-2 patch installed, a few fixes
@@ -444,13 +444,13 @@
 
   The following mirror sites have also been established:
 
-  ·  ftp://ftp.icm.edu.pl/pub/Linux/shadow/shadow-current.tar.gz
+  Â·  ftp://ftp.icm.edu.pl/pub/Linux/shadow/shadow-current.tar.gz
 
-  ·  ftp://iguana.hut.fi/pub/linux/shadow/shadow-current.tar.gz
+  Â·  ftp://iguana.hut.fi/pub/linux/shadow/shadow-current.tar.gz
 
-  ·  ftp://ftp.cin.net/usr/ggallag/shadow/shadow-current.tar.gz
+  Â·  ftp://ftp.cin.net/usr/ggallag/shadow/shadow-current.tar.gz
 
-  ·  ftp://ftp.netural.com/pub/linux/shadow/shadow-current.tar.gz
+  Â·  ftp://ftp.netural.com/pub/linux/shadow/shadow-current.tar.gz
 
   You should use the currently available version.
 
@@ -574,19 +574,19 @@
   the programs that the shadow suite will replace.  On a Slackware 3.0
   system these are:
 
-  ·  /bin/su
+  Â·  /bin/su
 
-  ·  /bin/login
+  Â·  /bin/login
 
-  ·  /usr/bin/passwd
+  Â·  /usr/bin/passwd
 
-  ·  /usr/bin/newgrp
+  Â·  /usr/bin/newgrp
 
-  ·  /usr/bin/chfn
+  Â·  /usr/bin/chfn
 
-  ·  /usr/bin/chsh
+  Â·  /usr/bin/chsh
 
-  ·  /usr/bin/id
+  Â·  /usr/bin/id
 
   The BETA package has a save target in the Makefile, but it's commented
   out because different distributions place the programs in different
@@ -633,19 +633,19 @@
   If you are using the Slackware 3.0 distribution, then the manual pages
   you want to remove are:
 
-  ·  /usr/man/man1/chfn.1.gz
+  Â·  /usr/man/man1/chfn.1.gz
 
-  ·  /usr/man/man1/chsh.1.gz
+  Â·  /usr/man/man1/chsh.1.gz
 
-  ·  /usr/man/man1/id.1.gz
+  Â·  /usr/man/man1/id.1.gz
 
-  ·  /usr/man/man1/login.1.gz
+  Â·  /usr/man/man1/login.1.gz
 
-  ·  /usr/man/man1/passwd.1.gz
+  Â·  /usr/man/man1/passwd.1.gz
 
-  ·  /usr/man/man1/su.1.gz
+  Â·  /usr/man/man1/su.1.gz
 
-  ·  /usr/man/man5/passwd.5.gz
+  Â·  /usr/man/man5/passwd.5.gz
 
   There may also be man pages of the same name in the /var/man/cat[1-9]
   subdirectories that should also be deleted.
@@ -1085,13 +1085,13 @@
 
   On my system:
 
-  ·  I want the default group to be 100
+  Â·  I want the default group to be 100
 
-  ·  I want passwords to expire every 60 days
+  Â·  I want passwords to expire every 60 days
 
-  ·  I don't want to lock an account because the password is expired
+  Â·  I don't want to lock an account because the password is expired
 
-  ·  I want to default shell to be /bin/bash
+  Â·  I want to default shell to be /bin/bash
 
      To make these changes I would use:
 
@@ -1155,7 +1155,7 @@
 
   You should use the supplied commands rather than directly editing
   /etc/passwd and /etc/shadow.  If you were editing the /etc/shadow
-  file, and a user were to change his password while you are editing,
+  file, and a user were to change their password while you are editing,
   and then you were to save the file you were editing, the user's
   password change would be lost.
 
@@ -1290,19 +1290,19 @@
   The passwd command has the obvious use of changing passwords.
   Additionally, it is used by the root user to:
 
-  ·  Lock and unlock accounts (-l and -u)
+  Â·  Lock and unlock accounts (-l and -u)
 
-  ·  Set the maximum number of days that a password remains valid (-x)
+  Â·  Set the maximum number of days that a password remains valid (-x)
 
-  ·  Set the minimum days between password changes (-n)
+  Â·  Set the minimum days between password changes (-n)
 
-  ·  Sets the number of days of warning that a password is about to
+  Â·  Sets the number of days of warning that a password is about to
      expire (-w)
 
-  ·  Sets the number of days after the password expires before the
+  Â·  Sets the number of days after the password expires before the
      account is locked (-i)
 
-  ·  Allow viewing of account information in a clearer format (-S)
+  Â·  Allow viewing of account information in a clearer format (-S)
 
   For example, let look again at fred
 
@@ -1340,12 +1340,12 @@
   that are contained within it.  However, there are a few things to
   note:
 
-  ·  It contains flags that can be turned on or off that determine the
+  Â·  It contains flags that can be turned on or off that determine the
      amount of logging that takes place.
 
-  ·  It contains pointers to other configuration files.
+  Â·  It contains pointers to other configuration files.
 
-  ·  It contains defaults assignments for things like password aging.
+  Â·  It contains defaults assignments for things like password aging.
 
   From the above list you can see that this is a rather important file,
   and you should make sure that it is present, and that the settings are
@@ -1436,17 +1436,17 @@
   /etc/passwd and /etc/shadow files.  It will check each username and
   verify that it has the following:
 
-  ·  the correct number of fields
+  Â·  the correct number of fields
 
-  ·  unique user name
+  Â·  unique user name
 
-  ·  valid user and group identifier
+  Â·  valid user and group identifier
 
-  ·  valid primary group
+  Â·  valid primary group
 
-  ·  valid home directory
+  Â·  valid home directory
 
-  ·  valid login shell
+  Â·  valid login shell
 
   It will also warn of any account that has no password.
 
@@ -1460,11 +1460,11 @@
   grpck is the consistency checking program for the /etc/group and
   /etc/gshadow files.  It performs the following checks:
 
-  ·  the correct number of fields
+  Â·  the correct number of fields
 
-  ·  unique group name
+  Â·  unique group name
 
-  ·  valid list of members and administrators
+  Â·  valid list of members and administrators
 
   It also has the -r option for automated reports.
 
